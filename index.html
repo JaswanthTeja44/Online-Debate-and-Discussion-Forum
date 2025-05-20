@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Debate and Discussion Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Online Debate and Discussion Forum</h1>
+        <p>Share your thoughts and engage in meaningful debates</p>
+    </header>
+
+    <main class="container">
+        <section class="create-post">
+            <form id="postForm">
+                <div class="form-group">
+                    <input type="text" id="postTitle" placeholder="Enter post title" maxlength="100">
+                    <div class="error-message" id="titleError"></div>
+                </div>
+                <div class="form-group">
+                    <textarea id="postContent" rows="4" placeholder="Write your post content..." maxlength="1000"></textarea>
+                    <div class="error-message" id="contentError"></div>
+                </div>
+                <button type="submit" class="btn">Create Post</button>
+            </form>
+        </section>
+
+        <section class="posts-container" id="postsContainer"></section>
+    </main>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
